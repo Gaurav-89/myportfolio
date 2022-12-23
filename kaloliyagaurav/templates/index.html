@@ -1,0 +1,200 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div class="navbararea">
+        <div class="navbar">
+            <p class="navbar-text">Kaloliya Gaurav</p>
+            <div class="navbar-links">
+                <a href="{% url 'kaloliyagaurav:index' %}" class="navbar-link">Home</a>
+                <a href="#aboutme" class="navbar-link">About Me</a>
+                <a href="#education" class="navbar-link">Education</a>
+                <a href="#skills" class="navbar-link">Skills</a>
+                <a href="#projects" class="navbar-link">Projects</a>
+                <a href="{% static 'docs/resume.pdf' %}" class="navbar-link">Resume</a>
+                <a href="{% url 'kaloliyagaurav:contact' %}" class="navbar-link" id="contactmebtn">Contact Me</a>
+            </div>
+            <i class="fas fa-ellipsis-h" id="navbar-menubtn"></i>
+        </div>
+        <div class="navbar-sidebar" id="navbar-sidebar">
+            <div class="navbar-sidebar-menuoptions">
+                <a href="{% url 'kaloliyagaurav:index' %}" class="navbar-link">Home</a>
+                <a href="#aboutme" class="navbar-link">About Me</a>
+                <a href="#education" class="navbar-link">Education</a>
+                <a href="#skills" class="navbar-link">Skills</a>
+                <a href="#projects" class="navbar-link">Projects</a>
+                <a href="{% static 'docs/resume.pdf' %}" class="navbar-link">Resume</a>
+                <a href="{% url 'kaloliyagaurav:contact' %}" class="navbar-link" id="contactmebtn">Contact Me</a>
+            </div>
+        </div>
+    </div>
+    <div class="mainarea" id="home">
+        <div class="mainpage">
+            <div class="info-section">
+                <p class="static-txt">Hi, I am</p>
+                <p class="dynamic-txt"></p>
+                <p class="static2-txt">Web Developer, Front-End Develper</p>
+            </div>
+            <div class="photo-section">
+                <img src="{% static 'images/my.jpg' %}">
+            </div>
+        </div>
+    </div>
+    <div class="aboutmearea" id="aboutme">
+        <p class="page-header">About Me</p>
+        <div class="aboutmepage">
+            <div class="aboutme-image">
+                <img src="{% static 'images/my-2.jpg' %}">
+            </div>
+            <div class="aboutme-text">
+                <p>Hi, i am <strong>kaloliya gaurav</strong>. I am <strong>16</strong>. My hobbies are <strong>playing football</strong> and <strong>listening pop music</strong>. At present, I am enrolled in <strong>Government Polytechnic Porbandar</strong> to parsue a <strong>diploma in computer engineering</strong>. My knowledge of programming languages includes HTML, CSS, JAVASCRIPT, PYTHON, DJANGO, FLASK, C, C++, etc.</p>
+            </div>
+        </div>
+    </div>
+    <div class="flexarea" id="education">
+        <div class="flexpage">
+            <div class="educationpage">
+                <p class="page-header">Education</p>
+                <div class="education-box">
+                    <p class="time">2020-Continue</p>
+                    <h2>Diploma in Computer Engineering</h2>
+                    <p class="place">Government Polytechnic Porbandar</p>
+                </div>
+            </div>
+            <div class="internshippage">
+                <p class="page-header">Internship</p>
+                <div class="internship-box">
+                    <p class="time">2 Weeks</p>
+                    <h2>Django (Python)</h2>
+                    <p class="place">HawksCode Softwares Pvt. Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skillsarea" id="skills">
+        <p class="page-header">Skills</p>
+        <div class="skillspage">
+            <div class="skillspage-gridarea">
+                <p class="title">Programming Languages</p>
+                <div class="skill">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar">
+                      <div class="skill-per" per="95%" style="max-width: 95%"></div>
+                    </div>
+                  </div>
+                <div class="skill">
+                  <div class="skill-name">CSS</div>
+                  <div class="skill-bar">
+                    <div class="skill-per" per="98%" style="max-width: 98%"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-name">Javascript</div>
+                  <div class="skill-bar">
+                    <div class="skill-per" per="100%" style="max-width: 100%"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar">
+                      <div class="skill-per" per="80%" style="max-width: 80%"></div>
+                    </div>
+                  </div>
+                <div class="skill">
+                  <div class="skill-name">DJANGO</div>
+                  <div class="skill-bar">
+                    <div class="skill-per" per="100%" style="max-width: 100%"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-name">FLASK</div>
+                  <div class="skill-bar">
+                    <div class="skill-per" per="60%" style="max-width: 60%"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-name">C</div>
+                  <div class="skill-bar">
+                    <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-name">C++</div>
+                  <div class="skill-bar">
+                    <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                  </div>
+                </div>
+            </div>
+            <div class="skillspage-gridarea">
+                <p class="title">Databases</p>
+                <div class="skill">
+                  <div class="skill-name">FIREBASE</div>
+                  <div class="skill-bar">
+                    <div class="skill-per" per="100%" style="max-width: 100%"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-name">SQL</div>
+                  <div class="skill-bar">
+                    <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projectarea" id="projects">
+        <p class="page-header">Projects</p>
+        <div class="projectpage">
+            <div class="project-box">
+                <img src="{% static 'images/giffy.PNG' %}">
+                <h2>Social Media Website</h2>
+            </div>
+            <div class="project-box">
+                <img src="{% static 'images/attendy.PNG' %}">
+                <h2>Attendance System with ID Card Scanning</h2>
+            </div>
+            <div class="project-box">
+                <img src="{% static 'images/tasky.PNG' %}">
+                <h2>Task App in Django</h2>
+            </div>
+            <div class="project-box">
+                <img src="{% static 'images/lifi.jpg' %}">
+                <h2>LIFI</h2>
+            </div>
+            <div class="project-box">
+                <img src="{% static 'images/sms.jpg' %}">
+                <h2>Store Management System</h2>
+            </div>
+            <div class="project-box">
+                <img src="{% static 'images/rock-paper-scissore.PNG' %}">
+                <h2>Rock Paper Scissore Game</h2>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-gridarea">
+            <p class="footer-logo">Kaloliya Gaurav</p>
+            <p class="contact">Contact</p>
+            <div class="footer-flexarea">
+
+                <p class="address">Rajivnagar, Porbandar, Gujarat</p>
+                <a class="footer-btn" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=imagaurav225@email.com&subject=MISSED%20CALL%20EZTRADER">Email Me</a>
+            </div>
+        </div>
+        <div class="footer-gridarea">
+            <div class="social-icons">
+                <a class="twitterbtn" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="codepenbtn" href="https://codepen.io/trending"><i class="fa fa-codepen"></i></a>
+                <a class="dribbblebtn" href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a>
+                <a class="githubbtn" href="https://github.com/Gaurav-89"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="legal">
+                <p>&copy; 2022 Kaloliya Gaurav. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+<!-- script area -->
+<script src="{% static 'js/script.js' %}"></script>
+<!-- script area end -->
+{% endblock %}
